@@ -1,6 +1,6 @@
 uBoost API (v2)
 ======================
-*Updated: 2012-08-24*
+*Updated: 2012-08-31*
 
 --------------------------------------------------------------------------------
 
@@ -25,32 +25,32 @@ Capitalized placeholders in the examples, such as `API_CREDENTIALS` and `SUBDOMA
 
 --------------------------------------------------------------------------------
 
-* [Accounts](#accounts)
-  * [Create](#accounts-create)
-  * [Select](#accounts-select)
-  * [Update](#accounts-update)
-  * [Remove](#accounts-remove)
-  * [Find](#accounts-find)
-  * [Get Single Sign On (SSO) Token for an Account](#accounts-sso)
-* [Points](#points)
-  * [List Points Transactions Belonging to an Account](#points-list)
-  * [Add Points to Account](#points-add)
-* [Groups](#groups)
-  * [List](#groups-list)
-  * [Select](#groups-select)
-  * [Create](#groups-create)
-  * [Update](#groups-update)
-  * [Destroy](#groups-destroy)
-* [Badges](#badges)
-  * [Create](#badges-create)
-  * [Unaward](#badges-unaward)
-* [Widgets](#widgets)
-  * [Profile](#widgets-profile)
-  * [Badge Categories](#widgets-badge-categories)
-  * [My Badges](#widgets-my-badges)
-  * [Unearned Badges](#widgets-unearned-badges)
-  * [List of Leaderboards](#widgets-leaderboards)
-  * [Leaderboard](#widgets-leaderboard)
+* [Accounts](#accounts-api)
+  * [Create](#create)
+  * [Select](#select)
+  * [Update](#update)
+  * [Remove](#remove)
+  * [Find](#find)
+  * [Get Single Sign On (SSO) Token for an Account](#get-single-sign-on-sso-token-for-an-account)
+* [Points](#points-api)
+  * [List Points Transactions Belonging to an Account](#list-points-transactions-belonging-to-an-account)
+  * [Add Points to Account](#add-points-to-account)
+* [Groups](#groups-api)
+  * [List](#list)
+  * [Select](#select-1)
+  * [Create](#create-1)
+  * [Update](#update-1)
+  * [Destroy](#destroy)
+* [Badges](#badges-api)
+  * [Create](#create-2)
+  * [Unaward](#unaward)
+* [Widgets](#widgets-api)
+  * [Profile](#profile)
+  * [Badge Categories](#badge-categories)
+  * [My Badges](#my-badges)
+  * [Unearned Badges](#unearned-badges)
+  * [List of Leaderboards](#list-of-leaderboards)
+  * [Leaderboard](#leaderboard)
 
 --------------------------------------------------------------------------------
 
@@ -850,7 +850,7 @@ An SSO token can be sent in using the `?sso_token` parameter. The token can only
 
 ### User Credentials
 
-In the cURL examples, substitue `USER_CREDENTIALS` with an active student account's user name and password. The Widgets API will return data used to populate widgets that are associated with the authenticated account.
+In the cURL examples, substitue `USER_CREDENTIALS` with an active student account's user name and password. The Widgets API will return data that is associated with the authenticated account.
 
 * Do not use the `API_CREDENTIALS` to access the Widgets API. The `API_CREDENTIALS` account does not have the proper data to populate a widget, and is used to access all APIs other than the Widgets API.
 
@@ -897,7 +897,7 @@ GET https://SUBDOMAIN.uboost.com/api/widgets/badges/categories
 cURL example - GET request
 
 ```
-curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/badges/categories
+curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/widgets/badges/categories
 
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
@@ -923,7 +923,7 @@ GET https://SUBDOMAIN.uboost.com/api/widgets/badges/mine/BADGE_CATEGORY_ID
 cURL example - GET request
 
 ```
-curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/badges/mine/7
+curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/widgets/badges/mine/7
 
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
@@ -951,7 +951,7 @@ GET https://SUBDOMAIN.uboost.com/api/widgets/badges/unearned/BADGE_CATEGORY_ID
 cURL example - GET request
 
 ```
-curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/badges/unearned/7
+curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/widgets/badges/unearned/7
 
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
@@ -981,7 +981,7 @@ GET https://SUBDOMAIN.uboost.com/api/widgets/leaderboards
 cURL example - GET request
 
 ```
-curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/leaderboards
+curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/widgets/leaderboards
 
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
@@ -1022,7 +1022,7 @@ GET https://SUBDOMAIN.uboost.com/api/widgets/leaderboards/LEADERBOARD_ID
 cURL example - GET request
 
 ```
-curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/leaderboards/1459
+curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/widgets/leaderboards/1459
 
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
