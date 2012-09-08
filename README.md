@@ -1031,40 +1031,52 @@ Content-Length: 375
 {
   "leaderboard":[
     {
+      "account_id": 123456789,
       "name":"top ranked user's name",
       "icon":"http://s3.amazonaws.com/ub-dev/image_files/517096/head_921613786_1345773020_small.png",
       "rank":1,
-      "points":"141160 xp"
+      "points":"141160 XP",
+      "level":20
     },
     {
+      "account_id": 123456789,
       "name":"2nd place user",
       "icon":"/images/avatar/no_avatar_head.png",
       "rank":2,
-      "points":"93430 xp"
+      "points":"93430 XP",
+      "level":15
     },
     {
+      "account_id": 123456789,
       "name":"3rd place user",
       "icon":"/images/avatar/no_avatar_head.png",
       "rank":3,
-      "points":"90084 xp"
+      "points":"90084 XP",
+      "level":14
     },
     {
+      "account_id": 123456789,
       "name":"The user one rank above you",
       "icon":"/images/avatar/no_avatar_head.png",
       "rank":25,
-      "points":"86981 xp"
+      "points":"86981 XP",
+      "level":14
     },
     {
+      "account_id": 123456789,
       "name":"YOU",
       "icon":"/images/avatar/no_avatar_head.png",
       "rank":26,
-      "points":"72851 xp"
+      "points":"72851 XP",
+      "level":13
     },
     {
+      "account_id": 123456789,
       "name":"The rest",
       "icon":"/images/avatar/no_avatar_head.png",
       "rank":27,
-      "points":"54013 xp"
+      "points":"54013 XP",
+      "level":5
     },
     ...
   ]
