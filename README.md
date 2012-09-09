@@ -1,6 +1,6 @@
 uBoost API (v2)
 ======================
-*Updated: 2012-08-31*
+*Updated: 2012-09-07*
 
 --------------------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ To request for a specific version of the API, send the version number within the
   * Removed `transaction_type`, because it is automatically set to `Direct Deposit` for all points created via the API
   * Added the `limit`(max 50) and `offset` parameters to the list method
   * Additional attributes are returned in the JSON data (XP and transaction type)
-* Badges API
+* Widgets API
   * JSONP support for cross domain API calls
   * Initially based on uBar API
 
@@ -942,6 +942,22 @@ Content-Length: 375
 }
 ```
 
+**Required Parameters**
+
+* BADGE_CATEGORY_ID (in URI path - replace with actual resource ID)
+
+
+**Optional Parameters**
+
+* limit # default 12, max 50
+
+
+**Note:**
+
+* In place of the BADGE_CATEGORY_ID, the keyword `all` can be used to retrieve the student's most recent badges. Badges are sorted by earned date in descending order.
+
+
+
 ### Unearned Badges
 
 ```
@@ -971,6 +987,12 @@ Content-Length: 375
   ]
 }
 ```
+
+**Required Parameters**
+
+* BADGE_CATEGORY_ID (in URI path - replace with actual resource ID)
+
+
 
 ### List of Leaderboards
 
