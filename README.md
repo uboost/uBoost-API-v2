@@ -935,6 +935,7 @@ Content-Length: 375
       "name":"Sandals of Fleeting Passage",
       "description":"Visited recognition and rewards at least 5 times.",
       "xp":100,
+      "earned_on":"2010/09/29 13:15:50 -1000",
       "icon":"http://s3.amazonaws.com/ub-dev/images/334111/Sandals_of_Fleeting_Passage_small.png"
     },
     ...
@@ -946,15 +947,14 @@ Content-Length: 375
 
 * BADGE_CATEGORY_ID (in URI path - replace with actual resource ID)
 
-
-**Optional Parameters**
-
-* limit # default 12, max 50
-
-
 **Note:**
 
 * In place of the BADGE_CATEGORY_ID, the keyword `all` can be used to retrieve the student's most recent badges. Badges are sorted by earned date in descending order.
+
+
+**Optional Parameters**
+
+* limit # default 12, max 50, available when BADGE_CATEGORY_ID is set to `all`
 
 
 
