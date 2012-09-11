@@ -1090,7 +1090,8 @@ Content-Length: 375
       "icon":"/images/avatar/no_avatar_head.png",
       "rank":26,
       "points":"72851 XP",
-      "level":13
+      "level":13,
+      "current_account":true
     },
     {
       "account_id": 123456789,
@@ -1111,4 +1112,4 @@ Content-Length: 375
 
 **Note:**
 
-By default each leaderboard will return a list of ten users: the top three ranked users, a user ranked above, the current user, and 5 users ranked below the current user. 
+By default each leaderboard will return a list of ten users: the top three ranked users, a user ranked above, the current user, and 5 users ranked below the current user. The logged-in student's account will be marked with `current_account` true.
