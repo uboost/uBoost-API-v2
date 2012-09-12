@@ -96,6 +96,7 @@ To request for a specific version of the API, send the version number within the
   * Added the `limit`(max 50) and `offset` parameters to the list method
   * Additional attributes are returned in the JSON data (XP and transaction type)
 * Widgets API
+  * New API for custom widgets
   * JSONP support for cross domain API calls
   * Initially based on uBar API
 
