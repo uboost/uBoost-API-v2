@@ -1,6 +1,6 @@
 uBoost API (v2)
 ======================
-*Updated: 2012-09-07*
+*Updated: 2012-10-10*
 
 --------------------------------------------------------------------------------
 
@@ -891,8 +891,8 @@ Content-Length: 322
   "profile":{
     "id":921785565,
     "user_name":"isaacnewton",
-    "avatar_head":"http://dev-test1.uboost.com:3000/images/avatar/no_avatar_head.png",
-    "avatar_body":"http://dev-test1.uboost.com:3000/images/avatar/no_avatar_body.png",
+    "avatar_head":"http://SUBDOMAIN.uboost.com/images/avatar/no_avatar_head.png",
+    "avatar_body":"http://SUBDOMAIN.uboost.com/images/avatar/no_avatar_body.png",
     "level":1,
     "currency_name":"Credits",
     "points":"0",
@@ -1079,7 +1079,7 @@ Content-Length: 375
     {
       "account_id": 123456789,
       "name":"2nd place user",
-      "icon":"/images/avatar/no_avatar_head.png",
+      "icon":"http://SUBDOMAIN.uboost.com/images/avatar/no_avatar_head.png",
       "rank":2,
       "points":"93430 XP",
       "level":15
@@ -1087,7 +1087,7 @@ Content-Length: 375
     {
       "account_id": 123456789,
       "name":"3rd place user",
-      "icon":"/images/avatar/no_avatar_head.png",
+      "icon":"http://SUBDOMAIN.uboost.com/images/avatar/no_avatar_head.png",
       "rank":3,
       "points":"90084 XP",
       "level":14
@@ -1095,7 +1095,7 @@ Content-Length: 375
     {
       "account_id": 123456789,
       "name":"The user one rank above you",
-      "icon":"/images/avatar/no_avatar_head.png",
+      "icon":"http://SUBDOMAIN.uboost.com/images/avatar/no_avatar_head.png",
       "rank":25,
       "points":"86981 XP",
       "level":14
@@ -1103,7 +1103,7 @@ Content-Length: 375
     {
       "account_id": 123456789,
       "name":"YOU",
-      "icon":"/images/avatar/no_avatar_head.png",
+      "icon":"http://SUBDOMAIN.uboost.com/images/avatar/no_avatar_head.png",
       "rank":26,
       "points":"72851 XP",
       "level":13,
@@ -1112,7 +1112,7 @@ Content-Length: 375
     {
       "account_id": 123456789,
       "name":"The rest",
-      "icon":"/images/avatar/no_avatar_head.png",
+      "icon":"http://SUBDOMAIN.uboost.com/images/avatar/no_avatar_head.png",
       "rank":27,
       "points":"54013 XP",
       "level":5
