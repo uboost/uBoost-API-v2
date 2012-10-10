@@ -842,6 +842,21 @@ Widgets API
 
 You can send the `?callback` parameter to any Widgets API GET call to have the results wrapped in a function. This is typically used to get around cross domain issues when accessing the Widgets API from a widget embedded within your LMS.
 
+**JSONP Errors**
+
+* All errors will return with a status code of 200, because there are no standardised way of handling status codes for JSONP.
+* The error message along with the actual status code will be embedded in the returned JSON data.
+
+Example Error
+
+```
+HTTP/1.1 200 OK
+Status: 200
+Content-Type: text/javascript; charset=utf-8
+
+callbackFunctionName({"status":401,"message":"Unauthorized"})
+```
+
 ### SSO and Cookies
 
 An SSO token can be sent in using the `?sso_token` parameter. The token can only be used once and has a 3 minute TTL. Once the token is used, the response from our API will include the `_uboost_session_id` cookie that can be used for future calls to the Widgets API. All Widgets API calls using the `_uboost_session_id` cookie will return data for the authenticated account.
