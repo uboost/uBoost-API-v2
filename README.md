@@ -11,6 +11,11 @@ Welcome Developers
 This guide is intended for developers who need to communicate remotely with the uBoost platform via web services. It assumes basic knowledge of network terminology, programming, and RESTful interfaces. By consuming web services through this API (application programming interface), you can automatically create accounts, award points, single-sign-on (SSO) your student from your LMS to uBoost, manage student groups, and award custom badges.
 
 
+**Working Examples**
+
+* [uBoost UI Components](http://uboost-ui-components.herokuapp.com/) - a collection of widgets and an LMS simulator that demonstrate how to use the API.
+
+
 ### General Description
 
 uBoost web services are designed around [RESTful principles](http://en.wikipedia.org/wiki/Representational_State_Transfer). In order to access these web services, you will need login credentials for HTTP Basic Authentication and the ability to communicate over HTTPS/TLS. uBoost only accepts web service calls encrypted over the HTTPS protocol. 
@@ -22,6 +27,7 @@ HTTP status codes are used to indicate success/failure. 200 indicates successful
 The programming examples are given as [cURL](http://en.wikipedia.org/wiki/CURL) commands, which are useful for testing, experimenting, and conceptualizing. However, in actual development you should use your favorite RESTful web service package for your particular development platform. These packages provide higher-level calls that effectively generate the same curl commands listed in this guide.
 
 Capitalized placeholders in the examples, such as `API_CREDENTIALS` and `SUBDOMAIN`, are meant to be replaced with the actual credentials and values that are supplied to you by uBoost.
+
 
 --------------------------------------------------------------------------------
 
