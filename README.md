@@ -874,7 +874,7 @@ callbackFunctionName({"status":401,"message":"Unauthorized"})
 An SSO token can be sent in using the `?sso_token` parameter. The token can only be used once and has a 3 minute TTL. Once the token is used, the response from our API will include the `_uboost_session_id` cookie that can be used for future calls to the Widgets API. All Widgets API calls using the `_uboost_session_id` cookie will return data for the authenticated account.
 
 
-* Reference: [Get Single Sign On (SSO) Token for an Account](#accounts-sso)
+* Reference: [Get Single Sign On (SSO) Token for an Account](#get-single-sign-on-sso-token-for-an-account)
 
 ### User Credentials
 
