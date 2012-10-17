@@ -299,6 +299,7 @@ Content-Length: 2
 * account[state]
 * account[district]
 * account[school]
+* account[external_id]
 * account[licensed] # setting to true turns off the trial period if this account was created with account[licensed]=false
 
 **Return**
