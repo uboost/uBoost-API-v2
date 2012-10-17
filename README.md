@@ -846,11 +846,14 @@ Widgets API
 
 ### JSONP Support
 
-You can send the `?callback` parameter to any Widgets API GET call to have the results wrapped in a function. This is typically used to get around cross domain issues when accessing the Widgets API from a widget embedded within your LMS.
+JSONP is a method typically used to get around cross domain issues when accessing an external API from JavaScript code embedded within an LMS. The Widgets API will support JSONP when the following conditions are met:
+
+* The `.js` file extension is added to the API call. This will ensure that the response header will return with `Content-type: text/javascript`.
+* And the `callback` GET parameter is sent into the API. The value for `callback` will be used as the name of the function that will wrap the result. For example, `?callback=yourFunctionName` will result in a response body of: `yourFunctionName(…)`. Callback function names may only contain alphanumeric characters and underscores.
 
 **JSONP Errors**
 
-* All errors will return with a status code of 200, because there are no standardised way of handling status codes for JSONP.
+* As of this writing, there is no standardised way of handling status codes for JSONP; therefore, all errors will return with a status code of 200 
 * The error message along with the actual status code will be embedded in the returned JSON data.
 
 Example Error
