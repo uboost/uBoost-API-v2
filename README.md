@@ -51,7 +51,7 @@ Capitalized placeholders in the examples, such as `API_CREDENTIALS` and `SUBDOMA
   * [Create](#create-2)
   * [Unaward](#unaward)
 * [Widgets](#widgets-api)
-  * [JSONP Support](#jsonp-suport)
+  * [JSONP Support](#jsonp-support)
   * [SSO and Cookies](#sso-and-cookies)
   * [User Credentials](#user-credentials)
   * [Profile](#profile)
@@ -960,6 +960,8 @@ Content-Length: 375
 {
   "my_badges":[
     {
+      "id":1139782,
+      "badge_type_id":65,
       "name":"Sandals of Fleeting Passage",
       "description":"Visited recognition and rewards at least 5 times.",
       "xp":100,
@@ -1004,6 +1006,7 @@ Content-Length: 375
 {
   "unearned_badges":[
     {
+      "badge_type_id":60,
       "name":"Highlighter of the Product Analyst",
       "description":"Rated at least 25 different rewards.",
       "xp":50,
