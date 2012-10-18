@@ -1,6 +1,6 @@
 uBoost API (v2)
 ======================
-*Updated: 2012-10-10*
+*Updated: 2012-10-18*
 
 --------------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ This guide is intended for developers who need to communicate remotely with the 
 
 **Working Examples**
 
-* [uBoost UI Components](http://uboost-ui-components.herokuapp.com/) - a collection of widgets and an LMS simulator that demonstrate how to use the API.
+* [uBoost UI Components](http://uboost-ui-components.herokuapp.com/)(early beta) - a collection of widgets and an LMS simulator that demonstrate how to use the API.
 
 
 ### General Description
