@@ -56,6 +56,7 @@ Capitalized placeholders in the examples, such as `API_CREDENTIALS` and `SUBDOMA
   * [User Credentials](#user-credentials)
   * [Profile](#profile)
   * [Badge Categories](#badge-categories)
+  * [Badges for a Specific Badge Category](#badges-for-a-specific-badge-category)
   * [My Badges](#my-badges)
   * [Unearned Badges](#unearned-badges)
   * [List of Leaderboards](#list-of-leaderboards)
