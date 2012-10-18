@@ -920,13 +920,13 @@ Content-Length: 322
 ### Badge Categories
 
 ```
-GET https://SUBDOMAIN.uboost.com/api/widgets/badges/categories
+GET https://SUBDOMAIN.uboost.com/api/widgets/badge_categories
 ```
 
 cURL example - GET request
 
 ```
-curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/widgets/badges/categories
+curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/widgets/badge_categories
 
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
@@ -942,6 +942,41 @@ Content-Length: 375
   ]
 }
 ```
+
+### Badges for a Specific Badge Category
+
+```
+GET https://SUBDOMAIN.uboost.com/api/widgets/badge_categories/BADGE_CATEGORY_ID/badges
+```
+
+cURL example - GET request
+
+```
+curl -i https://USER_CREDENTIALS@SUBDOMAIN.uboost.com/api/widgets/badge_categories/7/badges
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 375
+
+{
+  "badges":[
+    {
+      "id":65,
+      "name":"Sandals of Fleeting Passage",
+      "description":"Visited recognition and rewards at least 5 times.",
+      "xp":100,
+      "icon":"http://s3.amazonaws.com/ub-dev/images/334111/Sandals_of_Fleeting_Passage_small.png"
+    },
+    ...
+  ]
+}
+```
+
+**Required Parameters**
+
+* BADGE_CATEGORY_ID (in URI path - replace with actual resource ID)
+
+
 
 ### My Badges
 
